@@ -11,14 +11,7 @@
 <a href="https://github.com/daiquocnguyen/SANNE/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/daiquocnguyen/SANNE"></a>
 <img alt="GitHub" src="https://img.shields.io/github/license/daiquocnguyen/SANNE">
 
-This program provides the implementation of our unsupervised node embedding model SANNE as described in [the paper]():
-
-        @InProceedings{Nguyen2018SANNE,
-          author={Dai Quoc Nguyen and Tu Dinh Nguyen and Dinh Phung},
-          title={{A Self-Attention Network based Node Embedding Model}},
-          booktitle={...},
-          year={2018}
-          }
+This program provides the implementation of our unsupervised node embedding model SANNE as described in [our paper]() whose central idea is to employ a transformer self-attention network to iteratively aggregate vector representations of nodes in sampled random walks.
 
 <p align="center">
 	<img src="https://github.com/daiquocnguyen/SANNE/blob/master/SANNE.png">
@@ -41,29 +34,23 @@ To run the program in the transductive setting:
 To run the program in the inductive setting:
 
 	$ python train_SANNE_ind.py --embedding_dim 128 --name pubmed.128.8.ind5.pickle --idx_time 5 --nameTrans pubmed.128.8.trans.pickle --batch_size 64 --num_sampled 512 --num_epochs 50 --saveStep 2 --num_hidden_layers 8 --num_heads 4 --learning_rate 0.00005 --model_name pubmed_ind5_1288_bs64_8_4_3
-
-### Evaluation
-
-	$ python scoring_transductive.py --input cora --output cora --tmpString cora
-
-	$ python scoring_inductive.py --input cora_ind1_ --output cora --idx_time 1 --tmpString cora
 	
 ### Notes
 
-It is important to note that you should report the mean and standard deviation of accuracies over 10 different times of sampling training/validation/test sets when comparing models.
+It is important to note that you should report the mean and standard deviation of accuracies over 10 different times of sampling training/validation/test sets when comparing models. File `utils.py` has a function `sampleUniformRand` to randomly sample 10 different data splits of training/validation/test sets. I also include my 10 different data splits in `dataset_name.10sampledtimes`. You can see command examples in `commands.txt`.
 
-File `utils.py` has a function `sampleUniformRand` to randomly sample 10 different data splits of training/validation/test sets. I also include my 10 different data splits in `dataset_name.10sampledtimes`.
+## Cite
 
-File `sampleRWdatasets.py` is used to generate random walks. See command examples in `commands.txt`:
-		
-	$ python sampleRWdatasets.py --input data/cora.Full.edgelist --output graph/cora.128.8.trans.pickle --num-walks 128
-		
-	$ python sampleRWdatasets.py --input data/pubmed.ind.edgelist1 --output graph/pubmed.16.8.ind1.pickle --num-walks 16
+Please cite the paper whenever SANNE is used to produce published results or incorporated into other software:
 
-Unzip the zipped files in the folder `graph`.
-
+	@InProceedings{Nguyen2018SANNE,
+		  author={Dai Quoc Nguyen and Tu Dinh Nguyen and Dinh Phung},
+		  title={{A Self-Attention Network based Node Embedding Model}},
+		  booktitle={...},
+		  year={2018}
+		  }
 ## License
 
-Please cite the paper whenever SANNE is used to produce published results or incorporated into other software. As a free open-source implementation, SANNE is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. All other warranties including, but not limited to, merchantability and fitness for purpose, whether express, implied, or arising by operation of law, course of dealing, or trade usage are hereby disclaimed. I believe that the programs compute what I claim they compute, but I do not guarantee this. The programs may be poorly and inconsistently documented and may contain undocumented components, features or modifications. I make no guarantee that these programs will be suitable for any application.
+As a free open-source implementation, SANNE is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. All other warranties including, but not limited to, merchantability and fitness for purpose, whether express, implied, or arising by operation of law, course of dealing, or trade usage are hereby disclaimed. I believe that the programs compute what I claim they compute, but I do not guarantee this. The programs may be poorly and inconsistently documented and may contain undocumented components, features or modifications. I make no guarantee that these programs will be suitable for any application.
 
 SANNE is licensed under the Apache License 2.0.
