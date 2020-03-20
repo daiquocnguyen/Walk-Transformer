@@ -33,51 +33,20 @@ This program provides the implementation of our unsupervised node embedding mode
 - scikit-learn
 
 ### Training
+
 To run the program in the transductive setting:
 
-	$ python train_SANNE.py --embedding_dim <int> --name <transductive_random_walks> --batch_size <int> --num_sampled <int> --num_epochs <int> --num_hidden_layers <int> --num_heads <int> --learning_rate <float> --model_name <name_of_saved_model>
+	$ python train_SANNE.py --embedding_dim 128 --name cora.16.8.trans.pickle --batch_size 64 --num_sampled 512 --num_epochs 50 --num_hidden_layers 2 --num_heads 4 --learning_rate 0.00005 --model_name cora_squash_trans_168_bs64_2_4_3
 
 To run the program in the inductive setting:
 
-	$ python train_SANNE_ind.py --embedding_dim <int> --name <inductive_random_walks> --idx_time <int> --nameTrans <transductive_random_walks> --batch_size <int> --num_sampled <int> --num_epochs <int> --num_hidden_layers <int> --num_heads <int> --learning_rate <float> --model_name <name_of_saved_model>
-
-**Parameters:** 
-
-`--embedding_dim`: The embedding size.
-
-`--learning_rate`: The initial learning rate for the Adam optimizer.
-
-`--batch_size`: The batch size.
-
-`--name`: Name of random walk collection 
-
-`--num_sampled`: The number of samples for the sampled softmax loss function.
-
-`--num_epochs`: The number of training epochs.
-
-`--num_hidden_layers`: The number of attention layers.
-
-`--num_heads`: The number of attention heads.
-
-`--idx_time`: The index of data split (in {1, 2, ..., 10}).
-
-**Command examples:**     
-                
-	$ python train_SANNE.py --embedding_dim 128 --name cora.16.8.trans.pickle --batch_size 64 --num_sampled 512 --num_epochs 50 --num_hidden_layers 2 --num_heads 4 --learning_rate 0.00005 --model_name cora_squash_trans_168_bs64_2_4_3
-		
 	$ python train_SANNE_ind.py --embedding_dim 128 --name pubmed.128.8.ind5.pickle --idx_time 5 --nameTrans pubmed.128.8.trans.pickle --batch_size 64 --num_sampled 512 --num_epochs 50 --saveStep 2 --num_hidden_layers 8 --num_heads 4 --learning_rate 0.00005 --model_name pubmed_ind5_1288_bs64_8_4_3
 
-	
-In case the OS system installed `sbatch`, you can run a command: `sbatch file_name.script`, see the script examples in the file `scripts.zip`. 
-
 ### Evaluation
-
-**Command examples:**
 
 	$ python scoring_transductive.py --input cora --output cora --tmpString cora
 
 	$ python scoring_inductive.py --input cora_ind1_ --output cora --idx_time 1 --tmpString cora
-	
 	
 ### Notes
 
