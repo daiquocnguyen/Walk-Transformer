@@ -2,7 +2,7 @@
 	<img src="https://github.com/daiquocnguyen/SANNE/blob/master/sanne_logo.png">
 </p>
 
-## A Self-Attention Network based Node Embedding Model<a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fdaiquocnguyen%2FSANNE%2Fblob%2Fmaster%2FREADME.md"><img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fdaiquocng"></a>
+## From Random Walks to Transformer for Node Embeddings<a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fdaiquocnguyen%2FSANNE%2Fblob%2Fmaster%2FREADME.md"><img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fdaiquocng"></a>
 
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/daiquocnguyen/SANNE"><a href="https://github.com/daiquocnguyen/SANNE/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/daiquocnguyen/SANNE"></a>
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/daiquocnguyen/SANNE">
@@ -44,11 +44,11 @@ It is important to note that you should report the mean and standard deviation o
 Please cite the paper whenever SANNE is used to produce published results or incorporated into other software:
 
 	@InProceedings{Nguyen2018SANNE,
-		  author={Dai Quoc Nguyen and Tu Dinh Nguyen and Dinh Phung},
-		  title={{A Self-Attention Network based Node Embedding Model}},
-		  booktitle={...},
-		  year={2018}
-		  }
+		author={Dai Quoc Nguyen and Tu Dinh Nguyen and Dinh Phung},
+		title={{A Self-Attention Network based Node Embedding Model}},
+		booktitle={...},
+		year={2018}
+	}
 ## License
 
 As a free open-source implementation, SANNE is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. All other warranties including, but not limited to, merchantability and fitness for purpose, whether express, implied, or arising by operation of law, course of dealing, or trade usage are hereby disclaimed. I believe that the programs compute what I claim they compute, but I do not guarantee this. The programs may be poorly and inconsistently documented and may contain undocumented components, features or modifications. I make no guarantee that these programs will be suitable for any application.
