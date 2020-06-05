@@ -43,11 +43,11 @@ It is important to note that you should report the mean and standard deviation o
 
 Please cite the paper whenever SANNE is used to produce published results or incorporated into other software:
 
-	@InProceedings{Nguyen2018SANNE,
+	@InProceedings{Nguyen2019SANNE,
 		author={Dai Quoc Nguyen and Tu Dinh Nguyen and Dinh Phung},
 		title={{A Self-Attention Network based Node Embedding Model}},
-		booktitle={...},
-		year={2018}
+		booktitle={The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+		year={2020}
 	}
 ## License
 
