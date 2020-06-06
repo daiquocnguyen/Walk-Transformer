@@ -37,7 +37,7 @@ To run the program in the inductive setting:
 	
 ### Notes
 
-It is important to note that you should report the mean and standard deviation of accuracies over 10 different times of sampling training/validation/test sets when comparing models. File `utils.py` has a function `sampleUniformRand` to randomly sample 10 different data splits of training/validation/test sets. I also include my 10 different data splits in `dataset_name.10sampledtimes`. You can see command examples in `commands.txt`.
+The Tensorflow implementation was completed one year ago and now out-of-date. I will release the Pytorch implementation as soon as possible.
 
 ## Cite
 
