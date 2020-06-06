@@ -21,7 +21,7 @@ This program provides the implementation of our unsupervised node embedding mode
 
 ### News
 
-- The Tensorflow implementation was completed one year ago and now out-of-date. I will release the Pytorch implementation as soon as possible.
+- March 18: The Tensorflow implementation was completed one year ago and now out-of-date, caused by the change of Tensorflow from 1.x to 2.x
 
 ### Requirements
 - Python 3
