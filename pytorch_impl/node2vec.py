@@ -1,9 +1,9 @@
 import numpy as np
 import networkx as nx
 import random
+np.random.seed(123)
 
 '''This file is taken from https://github.com/aditya-grover/node2vec/blob/master/src/node2vec.py'''
-
 
 class Graph():
     def __init__(self, nx_G, is_directed, p, q):

@@ -21,12 +21,12 @@ This program provides the implementation of our unsupervised node embedding mode
 
 ### News
 
-- March 18: The Tensorflow implementation was completed one year ago and now out-of-date, caused by the change of Tensorflow from 1.x to 2.x. I will release the Pytorch implementation soon.
+- March 25: The Tensorflow implementation was completed one year ago and now it is out-of-date, caused by the change of Tensorflow from 1.x to 2.x. I will release the Pytorch implementation soon.
 
 ### Requirements
 - Python 3
-- Tensorflow >= 1.6
-- Tensor2tensor >= 1.9
+- Tensorflow 1.6
+- Tensor2tensor 1.9
 - scikit-learn
 
 ### Training
