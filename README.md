@@ -21,6 +21,7 @@ This program provides the implementation of our unsupervised node embedding mode
 
 ### News
 
+- June 08: Update Pytorch (1.5.0) implementation. You should change to the log_uniform directory to perform make to build SampledSoftmax, and then add the log_uniform directory to your PYTHONPATH.
 - March 25: The Tensorflow implementation was completed one year ago and now it is out-of-date, caused by the change of Tensorflow from 1.x to 2.x. I will release the Pytorch implementation soon.
 
 ### Requirements
