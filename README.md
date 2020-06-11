@@ -15,7 +15,7 @@
 - SANNE is also used in an inductive setting to infer embeddings of new/unseen nodes coming to a given graph.
 
 <p align="center">
-	<img src="https://github.com/daiquocnguyen/SANNE/blob/master/SANNE.png">
+	<img src="https://github.com/daiquocnguyen/SANNE/blob/master/SANNE.png" width="350">
 </p>
 
 ## Usage
