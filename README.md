@@ -33,13 +33,11 @@
 
 ### Training
 
-To run the program in the transductive setting:
+Examples for the Pytorch implementation:
 
-	$ python train_SANNE.py --embedding_dim 128 --name cora.16.8.trans.pickle --batch_size 64 --num_sampled 512 --num_epochs 50 --num_hidden_layers 2 --num_heads 4 --learning_rate 0.00005 --model_name cora_squash_trans_168_bs64_2_4_3
-
-To run the program in the inductive setting:
-
-	$ python train_SANNE_ind.py --embedding_dim 128 --name pubmed.128.8.ind5.pickle --idx_time 5 --nameTrans pubmed.128.8.trans.pickle --batch_size 64 --num_sampled 512 --num_epochs 50 --saveStep 2 --num_hidden_layers 8 --num_heads 4 --learning_rate 0.00005 --model_name pubmed_ind5_1288_bs64_8_4_3
+	$ python train_pytorch_SANNE.py --dataset cora --batch_size 64 --num_self_att_layers 2 --num_heads 2 --ff_hidden_size 256 --num_neighbors 4 --walk_length 8 --num_walks 32 --learning_rate 0.005 --model_name CORA_trans_att2_h2_nw32_lr0.005
+	
+	$ python train_pytorch_SANNE_inductive.py --dataset cora --batch_size 64 --num_self_att_layers 2 --num_heads 2 --ff_hidden_size 256 --num_neighbors 4 --walk_length 8 --num_walks 32 --fold_idx 1 --learning_rate 0.005 --model_name CORA_ind_att2_h2_nw32_fold1_lr0.005
 
 ## Cite
 
