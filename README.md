@@ -27,8 +27,8 @@
 
 ### Requirements
 - Python 3
-- Tensorflow 1.6
-- Tensor2tensor 1.9
+- Pytorch 1.5 or 
+- Tensorflow 1.6 and Tensor2Tensor 1.9
 - scikit-learn
 
 ### Training
