@@ -4,7 +4,6 @@ import random
 
 '''This file is taken from https://github.com/aditya-grover/node2vec/blob/master/src/node2vec.py'''
 
-
 class Graph():
     def __init__(self, nx_G, is_directed, p, q):
         self.G = nx_G
