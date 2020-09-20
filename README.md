@@ -12,7 +12,7 @@
 <img alt="GitHub" src="https://img.shields.io/github/license/daiquocnguyen/SANNE">
 
 - This program provides the implementation of our unsupervised node embedding model SANNE as described in [our paper](https://arxiv.org/abs/2006.12100) whose central idea is to employ a transformer self-attention network to iteratively aggregate vector representations of nodes in sampled random walks. 
-- SANNE is also used in an inductive setting to infer embeddings of new/unseen nodes coming to a given graph.
+- SANNE is also used in an inductive setting to infer embeddings of new/unseen nodes adding to a given graph.
 
 <p align="center">
 	<img src="https://github.com/daiquocnguyen/SANNE/blob/master/SANNE.png" width="450">
