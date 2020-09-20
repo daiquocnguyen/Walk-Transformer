@@ -2,7 +2,7 @@
 	<img src="https://github.com/daiquocnguyen/SANNE/blob/master/sanne_logo.png">
 </p>
 
-# From Random Walks to Transformer for Node Embeddings<a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fdaiquocnguyen%2FSANNE%2Fblob%2Fmaster%2FREADME.md"><img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fdaiquocng"></a>
+# From Random Walks to Transformer for Learning Node Embeddings<a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fdaiquocnguyen%2FSANNE%2Fblob%2Fmaster%2FREADME.md"><img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fdaiquocng"></a>
 
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/daiquocnguyen/SANNE"><a href="https://github.com/daiquocnguyen/SANNE/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/daiquocnguyen/SANNE"></a>
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/daiquocnguyen/SANNE">
@@ -46,7 +46,7 @@ Please cite the paper whenever SANNE is used to produce published results or inc
 	@InProceedings{Nguyen2019SANNE,
 		author={Dai Quoc Nguyen and Tu Dinh Nguyen and Dinh Phung},
 		title={{A Self-Attention Network based Node Embedding Model}},
-		booktitle={The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+		booktitle={Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
 		year={2020}
 	}
 ## License
