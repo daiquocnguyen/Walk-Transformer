@@ -45,7 +45,7 @@ Please cite the paper whenever SANNE is used to produce published results or inc
 
 	@InProceedings{Nguyen2020SANNE,
 		author={Dai Quoc Nguyen and Tu Dinh Nguyen and Dinh Phung},
-		title={{A Self-Attention Network based Node Embedding Model}},
+		title={A Self-Attention Network based Node Embedding Model},
 		booktitle={Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
 		year={2020}
 	}
