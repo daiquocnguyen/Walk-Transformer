@@ -29,7 +29,7 @@
 - Python 3
 - Pytorch 1.5 or 
 - Tensorflow 1.6 and Tensor2Tensor 1.9
-- scikit-learn
+- scikit-learn 0.21.3
 
 ### Training
 
